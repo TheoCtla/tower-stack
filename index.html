@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Tower Stack</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/icon.svg">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        
+        <div id="ui-layer">
+            <div id="score-container">
+                <span id="score">0</span>
+            </div>
+            
+            <div id="start-screen" class="screen active">
+                <img src="assets/logo.svg" alt="Tower Stack" class="logo">
+                <p>Tap to place the block</p>
+                <button id="start-btn" class="btn">PLAY</button>
+            </div>
+
+            <div id="game-over-screen" class="screen">
+                <h2>GAME OVER</h2>
+                <p>Score: <span id="final-score">0</span></p>
+                <button id="restart-btn" class="btn">RETRY</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
